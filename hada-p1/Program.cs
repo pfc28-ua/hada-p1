@@ -29,7 +29,7 @@ namespace hada_p1
                     Console.WriteLine("{0} segundos son {1} minutos.", s, HadaP1.Seconds2Minutes(s));
                 }
 
-                [cite_start]} while (respuesta != "salir"); [cite: 1193]
-        }
+                } while (respuesta != "salir"); 
+            }
     }
 }
