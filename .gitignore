@@ -1,0 +1,10 @@
+# Carpetas de compilación de Visual Studio
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+
+# Archivos de usuario y temporales
+*.suo
+*.user
+.vs/
