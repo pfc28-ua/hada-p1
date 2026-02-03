@@ -8,5 +8,10 @@ namespace hada_p1
 {
     internal class HadaP1
     {
+        public static double Seconds2Minutes(double s)
+        {
+            if (s == 0) return 0; // Modificación obligatoria [cite: 1013]
+            return s / 60.0;
+        }
     }
 }
