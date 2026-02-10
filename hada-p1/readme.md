@@ -1,39 +1,42 @@
 Pablo Fernandez Cabezas
 
-Práctica 1: Uso de git
+PrÃ¡ctica 1: Uso de git
 
-P1. ¿Qué crees que significa la opción -n en el comando revert? La opción -n (o --no-commit) indica a git que aplique los cambios necesarios para deshacer el commit seleccionado en el directorio de trabajo y en el índice, pero sin crear automáticamente el nuevo commit de confirmación. Esto permite al usuario revisar los cambios o realizar modificaciones adicionales antes de confirmar la reversión manualmente.
-
-
-
-P2. ¿Qué cambios se han producido al ejecutar el comando reset? Al ejecutar git reset --hard, el puntero de la rama actual (HEAD) se mueve al commit especificado y el directorio de trabajo se actualiza para coincidir exactamente con ese estado. Cualquier cambio no confirmado o commit posterior al punto elegido se elimina permanentemente del directorio de trabajo y del historial de la rama.
+P1. Â¿QuÃ© crees que significa la opciÃ³n -n en el comando revert? La opciÃ³n -n (o --no-commit) indica a git que aplique los cambios necesarios para deshacer el commit seleccionado en el directorio de trabajo y en el Ã­ndice, pero sin crear automÃ¡ticamente el nuevo commit de confirmaciÃ³n. Esto permite al usuario revisar los cambios o realizar modificaciones adicionales antes de confirmar la reversiÃ³n manualmente.
 
 
 
-
-
-P3. ¿Qué diferencias observas entre revert y reset? 
-La principal diferencia es cómo afectan al historial del repositorio:
-
-
-Revert: Crea un nuevo commit que deshace los cambios de un commit anterior, manteniendo la historia intacta y permitiendo ver que algo fue deshecho. Es más seguro para ramas compartidas.
-
-
-
-
-Reset: Mueve el puntero de la rama hacia atrás en el tiempo, borrando los commits intermedios de la historia de esa rama. Es una operación destructiva para el historial.
+P2. Â¿QuÃ© cambios se han producido al ejecutar el comando reset? Al ejecutar git reset --hard, el puntero de la rama actual (HEAD) se mueve al commit especificado y el directorio de trabajo se actualiza para coincidir exactamente con ese estado. Cualquier cambio no confirmado o commit posterior al punto elegido se elimina permanentemente del directorio de trabajo y del historial de la rama.
 
 
 
 
 
-P4. ¿Qué diferencias observas entre merge y rebase? 
+P3. Â¿QuÃ© diferencias observas entre revert y reset? 
+La principal diferencia es cÃ³mo afectan al historial del repositorio:
 
 
-Merge (Mezcla): Combina dos ramas creando un nuevo "commit de fusión" (merge commit) que une las historias de ambas. Conserva el historial tal y como sucedió, incluyendo las bifurcaciones.
+Revert: Crea un nuevo commit que deshace los cambios de un commit anterior, manteniendo la historia intacta y permitiendo ver que algo fue deshecho. Es mÃ¡s seguro para ramas compartidas.
+
+
+
+
+Reset: Mueve el puntero de la rama hacia atrÃ¡s en el tiempo, borrando los commits intermedios de la historia de esa rama. Es una operaciÃ³n destructiva para el historial.
 
 
 
 
 
-Rebase (Rebasar): Mueve o "vuelve a escribir" los commits de una rama para que parezcan realizados linealmente sobre la punta de otra rama. Esto resulta en un historial mucho más limpio y lineal, sin commits de fusión adicionales.
+P4. Â¿QuÃ© diferencias observas entre merge y rebase? 
+
+
+Merge (Mezcla): Combina dos ramas creando un nuevo "commit de fusiÃ³n" (merge commit) que une las historias de ambas. Conserva el historial tal y como sucediÃ³, incluyendo las bifurcaciones.
+
+
+
+
+
+Rebase (Rebasar): Mueve o "vuelve a escribir" los commits de una rama para que parezcan realizados linealmente sobre la punta de otra rama. Esto resulta en un historial mucho mÃ¡s limpio y lineal, sin commits de fusiÃ³n adicionales.
+
+
+Modificado desde la interfaz web de GitHub
