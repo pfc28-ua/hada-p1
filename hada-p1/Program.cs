@@ -13,7 +13,7 @@ namespace hada_p1
             string respuesta;
             do
             {
-                Console.WriteLine("¿Qué conversión desea realizar? (min/seg) o 'salir':");
+                Console.WriteLine("¿Qué conversión desea realizar? (min/seg/h) o 'salir':");
                 respuesta = Console.ReadLine();
 
                 if (respuesta == "min")
