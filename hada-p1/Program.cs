@@ -28,8 +28,14 @@ namespace hada_p1
                     double s = double.Parse(Console.ReadLine());
                     Console.WriteLine("{0} segundos son {1} minutos.", s, HadaP1.Seconds2Minutes(s));
                 }
+                else if (respuesta == "h")
+                {
+                    Console.WriteLine("Introduce la cantidad de horas:");
+                    double h = double.Parse(Console.ReadLine());
+                    Console.WriteLine("{0} horas son {1} minutos.", h, HadaP1.Hours2Minutes(h));
+                }
 
-                } while (respuesta != "salir"); 
+            } while (respuesta != "salir"); 
             }
     }
 }

@@ -18,5 +18,10 @@ namespace hada_p1
         {
             return m * 60.0;
         }
+
+        public static double Hours2Minutes(double h)
+        {
+            return h * 60.0;
+        }
     }
 }
